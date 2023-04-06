@@ -1,9 +1,8 @@
 public class Contador extends Funcionario {
-
-    @Override
+@Override
     public double getBonificacion() {
         System.out.println("Llamando metodo del Contador");
-        return super.getBonificacion();
+        return 200;
     }
 
 }

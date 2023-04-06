@@ -1,4 +1,4 @@
-public class Funcionario {
+public abstract class Funcionario {
     private String nombre;
     private String documento;
     private double salario;
@@ -42,13 +42,20 @@ public class Funcionario {
         this.tipo = tipo;
     }
 
-    public double getBonificacion() {
+    public abstract double getBonificacion();
+
+    //Con super tenemos acceso a los métodos de la clase padre
+    //método con sobreescritura (override)
+
+//lo borramos porque ahora funcionario no necesita tener este metodo al ser abstracto
+    //public double getBonificacion() {
         //if (this.tipo == 0) {
-            return this.salario * 0.05;
+     //       return this.salario * 0.05;
        // } else if(this.tipo == 1) {
          //   return this.salario;
         //} else {
           //  return 0;
         //}
-    }
+    //}
 }
+
